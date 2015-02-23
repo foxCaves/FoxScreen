@@ -1,7 +1,6 @@
 package es.foxcav.foxscreen.util;
 
 import es.foxcav.foxscreen.FormScreenshotSelect;
-import org.w3c.dom.css.Rect;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;

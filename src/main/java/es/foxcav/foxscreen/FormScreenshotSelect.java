@@ -1,7 +1,6 @@
 package es.foxcav.foxscreen;
 
 import es.foxcav.foxscreen.util.AbstractScreenshotMaker;
-import javafx.scene.input.MouseButton;
 
 import javax.swing.*;
 import java.awt.*;

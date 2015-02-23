@@ -1,11 +1,11 @@
 package es.foxcav.foxscreen.util;
 
-import java.awt.*;
-
 import com.sun.jna.Native;
 import com.sun.jna.platform.win32.WinDef;
 import com.sun.jna.win32.StdCallLibrary;
 import com.sun.jna.win32.W32APIOptions;
+
+import java.awt.*;
 
 public class Win32ScreenshotMaker extends AbstractScreenshotMaker {
     public interface User32 extends StdCallLibrary {
