@@ -35,10 +35,19 @@ public class FormScreenshotSelect extends JFrame {
                 g.drawImage(image, 0, 0, null);
 
                 if(selectorRect != null) {
+                    int width = getWidth();
+                    int height = getHeight();
+                    int y2 = selectorRect.y + selectorRect.height;
+                    int x2 = selectorRect.x + selectorRect.width;
+
                     g.setColor(SELECTOR_RECT_COLOR);
                     g.drawRect(selectorRect.x, selectorRect.y, selectorRect.width, selectorRect.height);
-                    g.setColor(SELECTOR_OUTSIDE_COLOR);
 
+                    g.setColor(SELECTOR_OUTSIDE_COLOR);
+                    g.fillRect(0, 0, width, selectorRect.y);
+                    g.fillRect(0, y2, width, height - y2);
+                    g.fillRect(0, selectorRect.y, selectorRect.x, selectorRect.height);
+                    g.fillRect(x2, selectorRect.y, width - x2, selectorRect.height);
                 }
             }
         });
