@@ -48,12 +48,12 @@ public class FormScreenshotSelect extends JFrame {
         setBounds(screenBounds);
 
         MouseAdapter mouseListener = new MouseAdapter() {
-            private int startX, startY, endX, endY;
+            private int startX, startY;
             private boolean mousePressed = false;
 
             private void refreshPosition(MouseEvent e) {
-                endX = e.getX();
-                endY = e.getY();
+                int endX = e.getX();
+                int endY = e.getY();
 
                 int x1 = Math.min(startX, endX);
                 int x2 = Math.max(startX, endX);
